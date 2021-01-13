@@ -3,4 +3,7 @@ include 'ActiveMQ'
 include 'Mybatis'
 include 'Oauth2'
 include 'Redis'
+include 'Solr'
+include 'Spring'
+include 'SpringMVC'
 
