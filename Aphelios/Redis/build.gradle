@@ -6,6 +6,7 @@ group 'com.wjx.aphelios'
 version '1.0-SNAPSHOT'
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
@@ -21,4 +22,5 @@ dependencies {
     compile group: 'org.springframework', name: 'spring-jdbc', version: '4.3.14.RELEASE'
     compile group: 'org.springframework.data', name: 'spring-data-redis', version: '2.0.3.RELEASE'
     compile group: 'redis.clients', name: 'jedis', version: '2.9.0'
+    compile group: 'com.wjx.teemo', name: 'Teemo', version: '1.0-SNAPSHOT'
 }

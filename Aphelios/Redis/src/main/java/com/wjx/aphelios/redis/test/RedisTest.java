@@ -1,6 +1,8 @@
 package com.wjx.aphelios.redis.test;
 
-import com.wjx.redis.utils.RedisHelper;
+import com.wjx.aphelios.redis.utils.RedisHelper;
+import com.wjx.teemo.domain.result.Result;
+import com.wjx.teemo.domain.utils.GetRandomUserInfo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.data.redis.core.RedisTemplate;

@@ -10,6 +10,11 @@
     <packaging>jar</packaging>
     <description>公共模块，提供基础jar包</description>
 
+    <properties>
+        <javaVersion>1.8</javaVersion>
+        <encoding>UTF8</encoding>
+    </properties>
+
     <dependencies>
         <!--自动注解-->
         <dependency>
@@ -73,6 +78,14 @@
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <configuration>
                         <fork>true</fork>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>${javaVersion}</source>
+                        <target>${javaVersion}</target>
+                        <encoding>${encoding}</encoding>
                     </configuration>
                 </plugin>
             </plugins>
