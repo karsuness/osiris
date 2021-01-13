@@ -20,7 +20,6 @@ public interface UserDao {
 
     /**
      * 通过名称获取user
-     *
      * @param name 名称
      * @return
      */
@@ -28,7 +27,6 @@ public interface UserDao {
 
     /**
      * 插入user
-     *
      * @param user 要插入的user
      * @return
      */
@@ -36,7 +34,6 @@ public interface UserDao {
 
     /**
      * 修改用户
-     *
      * @param user user信息
      * @return
      */
@@ -44,7 +41,6 @@ public interface UserDao {
 
     /**
      * 通过id删除user
-     *
      * @param id id
      * @return
      */
@@ -52,7 +48,6 @@ public interface UserDao {
 
     /**
      * 获取全部用户信息
-     *
      * @return
      */
     List<User> listUser();

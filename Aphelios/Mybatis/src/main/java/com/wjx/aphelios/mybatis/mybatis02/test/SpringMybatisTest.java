@@ -61,7 +61,7 @@ public class SpringMybatisTest {
     @Test
     public void testListUser() {
         List<User> users = userDao.listUser();
-        users.stream().forEach(e -> {
+        users.stream().forEach(e ->{
             System.out.println(e);
             System.out.println(e.getBirthday().toLocalDate().toString());
         });

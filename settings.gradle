@@ -1,4 +1,0 @@
-include 'Aphelios'
-include 'Aphelios:ActiveMQ'
-findProject(':Aphelios:ActiveMQ')?.name = 'ActiveMQ'
-
