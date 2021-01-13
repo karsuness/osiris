@@ -7,7 +7,5 @@
 src/test/
 target/*
 .gradle/*
-.gradle/
-*/build.gradle
 */build/
-Oauth2/src/test/
+

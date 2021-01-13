@@ -11,6 +11,7 @@ build/
 .idea/*
 *.iml
 */*.class
+.DS_Store
 .gradle/
 gradle/
 *.war
@@ -23,3 +24,4 @@ out
 */out/*
 out/
 */.idea/*
+*/src/test/
