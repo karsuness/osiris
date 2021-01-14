@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementById</title>
+</head>
+<body>
+<div id="time">2021-01-12</div>
+<script>
+    //1.因为文档是从上往下加载的，所以现有标签才能通过script获取
+    //2.getElementById参数大小写敏感
+    //3.返回的是一个元素对象
+    let timer = document.getElementById("time")
+    console.log(timer)
+    console.log(typeof timer)
+    //console.dir 打印出元素的对象，查看其它方法和属性
+    console.dir(timer)
+</script>
+</body>
+</html>
