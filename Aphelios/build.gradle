@@ -1,2 +1,31 @@
-group 'com.wjx.aphelios'
-version '1.0-SNAPSHOT'
+buildscript {
+    repositories {
+        mavenLocal()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        mavenCentral()
+    }
+}
+
+allprojects {
+    group 'com.wjx.aphelios'
+    version '1.0-SNAPSHOT'
+
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'maven'
+
+    //指定java版本
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    //指定编码格式
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+
+    repositories {
+        mavenLocal()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        mavenCentral()
+    }
+}
