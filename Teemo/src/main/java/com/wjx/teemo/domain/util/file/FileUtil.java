@@ -1,4 +1,4 @@
-package com.wjx.teemo.domain.utils.file;
+package com.wjx.teemo.domain.util.file;
 
 import java.io.*;
 import java.net.HttpURLConnection;

@@ -1,4 +1,4 @@
-package com.wjx.teemo.domain.utils.key;
+package com.wjx.teemo.domain.util.key;
 
 import lombok.extern.slf4j.Slf4j;
 

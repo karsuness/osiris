@@ -1,4 +1,4 @@
-package com.wjx.teemo.domain.utils.sftp;
+package com.wjx.teemo.domain.util.sftp;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

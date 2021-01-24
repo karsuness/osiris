@@ -1,4 +1,4 @@
-package com.wjx.teemo.domain.utils;
+package com.wjx.teemo.domain.util;
 
 /**
  * @author WJX

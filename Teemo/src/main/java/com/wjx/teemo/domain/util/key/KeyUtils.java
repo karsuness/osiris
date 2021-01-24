@@ -1,4 +1,4 @@
-package com.wjx.teemo.domain.utils.key;
+package com.wjx.teemo.domain.util.key;
 
 import org.apache.commons.codec.binary.Base64;
 import org.springframework.util.Base64Utils;
