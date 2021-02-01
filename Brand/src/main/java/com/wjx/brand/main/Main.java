@@ -1,4 +1,4 @@
-package com.wjx.brand;
+package com.wjx.brand.main;
 
 import java.util.*;
 
@@ -6,7 +6,7 @@ import java.util.*;
  * @author WJX
  * @since 2018/5/27 10:43
  */
-public class CollectionDemo {
+public class Main {
     public static void main1(String[] args) {
         Map<String, String> map1 = new HashMap<>(1);
         Map<String, String> map2 = new HashMap<>();
