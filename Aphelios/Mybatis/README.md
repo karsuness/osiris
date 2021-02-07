@@ -1,2 +1,0 @@
-#Mybatis
-第一个包是简单的原生mybatis的应用，第二个包时mybatis整合spring的应用

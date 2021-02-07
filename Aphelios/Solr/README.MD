@@ -1,3 +1,0 @@
-#Solr
-此项目代码是练习solr搜索的代码  
-运行此项目的前提是本地启动solr服务器，如果solr服务器不在本地，可以修改SolrService类中的URL
