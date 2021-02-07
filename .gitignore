@@ -8,4 +8,7 @@ src/test/
 target/*
 .gradle/*
 */build/
+out/*
+*/out
+*/out/*
 

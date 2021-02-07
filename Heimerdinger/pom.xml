@@ -6,14 +6,14 @@
 
     <groupId>com.wjx.heimerdinger</groupId>
     <artifactId>heimerdinger</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <description>算法、LeetCode代码</description>
 
     <dependencies>
         <dependency>
             <groupId>com.wjx.teemo</groupId>
             <artifactId>teemo</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 
