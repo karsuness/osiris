@@ -1,4 +1,4 @@
-rootProject.name = 'Aphelios'
+rootProject.name = 'aphelios'
 include 'ActiveMQ'
 include 'Mybatis'
 include 'Oauth2'

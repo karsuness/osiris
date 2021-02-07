@@ -1,0 +1,70 @@
+buildscript {
+    ext {
+        springBootVersion = '2.3.2.RELEASE'
+        springCloudVersion = 'Hoxton.SR8'
+        springCloudAlibabaVersion = '2.2.3.RELEASE'
+    }
+
+    repositories {
+        mavenLocal()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+group 'com.wjx.darius'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+idea {
+    module {
+        downloadSources = true
+        downloadJavadoc = true
+    }
+}
+
+//指定java版本
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+//指定编码格式
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+repositories {
+    mavenLocal()
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    mavenCentral()
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.boot:spring-boot-dependencies:${springBootVersion}"
+//            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+//            mavenBom "com.alibaba.cloud:spring-cloud-alibaba-dependencies:${springCloudAlibabaVersion}"
+    }
+}
+
+dependencies {
+    compile group: "com.wjx.teemo", name: "teemo"
+    compile group: 'com.baomidou', name: 'mybatis-plus-boot-starter', version: '3.4.2'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
+    compile group: 'mysql', name: 'mysql-connector-java'
+}
+
+jar {
+    manifest.attributes provider: 'gradle'
+}
+
+
+
