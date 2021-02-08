@@ -41,7 +41,7 @@ public class Main {
         set.stream().forEach(e -> System.out.println(e));
     }
 
-    public static void main(String[] args) {
+    public static void main4(String[] args) {
         TreeMap<String, String> map = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
         map.put("a", "a");
         map.put("c", "c");
@@ -57,5 +57,13 @@ public class Main {
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
+    }
+
+    public static void main(String[] args) {
+        List<String> list = null;
+        Optional.ofNullable(list).orElseGet(() -> {
+            System.out.println("is empty");
+            return new ArrayList<>();
+        });
     }
 }
