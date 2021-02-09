@@ -59,11 +59,16 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main5(String[] args) {
         List<String> list = null;
         Optional.ofNullable(list).orElseGet(() -> {
             System.out.println("is empty");
             return new ArrayList<>();
         });
+    }
+
+    public static void main(String[] args) {
+        String property = System.getProperty("user.home");
+        System.out.println(property);
     }
 }
