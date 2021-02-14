@@ -36,7 +36,7 @@ public class CodeGenerator {
 
         // 2.数据源配置
         DataSourceConfig dataSourceConfig = new DataSourceConfig();
-        dataSourceConfig.setUrl("jdbc:mysql://wangjinxin.cn:3306/darius?characterEncoding=utf-8&serverTimezone=GMT%2B8")
+        dataSourceConfig.setUrl("jdbc:mysql://wangjinxin.cn:3306/osiris?characterEncoding=utf-8&serverTimezone=GMT%2B8")
                 .setDriverName("com.mysql.cj.jdbc.Driver")
                 .setUsername("root")
                 .setPassword("wjx1415926");
@@ -54,11 +54,10 @@ public class CodeGenerator {
                 .setEntityLombokModel(true)
                 .setRestControllerStyle(true)
                 //扫描的表
-                .setInclude("user");
-
+                .setInclude("job_group","job_info","job_lock","job_log","job_log_report","job_logglue","job_registry","job_user");
         // 4.包配置
         PackageConfig packageConfig = new PackageConfig();
-        packageConfig.setParent("com.wjx.darius")
+        packageConfig.setParent("com.wjx.osiris")
                 .setMapper("mapper")
                 .setService("service")
                 .setController("controller")
