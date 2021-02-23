@@ -67,7 +67,7 @@ public class Main {
         });
     }
 
-    public static void main(String[] args) {
+    public static void main6(String[] args) {
         String property = System.getProperty("user.home");
         System.out.println(property);
     }
