@@ -6,9 +6,9 @@ import com.wjx.ezreal.factory.bean.Shape;
 import com.wjx.ezreal.factory.bean.TriangleShape;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/11 11:52
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description
  */
 public class Main {

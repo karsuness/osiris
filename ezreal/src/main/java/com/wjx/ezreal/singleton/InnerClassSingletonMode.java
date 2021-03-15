@@ -1,9 +1,9 @@
 package com.wjx.ezreal.singleton;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/9 23:31
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description 静态内部类单例模式
  */
 public class InnerClassSingletonMode {

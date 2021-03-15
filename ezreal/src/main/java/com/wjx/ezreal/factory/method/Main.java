@@ -3,9 +3,9 @@ package com.wjx.ezreal.factory.method;
 import com.wjx.ezreal.factory.bean.Shape;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/11 19:36
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description
  */
 public class Main {

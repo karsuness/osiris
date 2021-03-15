@@ -5,9 +5,9 @@ import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/10 19:23
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description 登记式单例模式
  */
 public class RegistSingleton {

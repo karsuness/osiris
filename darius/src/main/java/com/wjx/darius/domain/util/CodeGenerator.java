@@ -9,9 +9,9 @@ import com.baomidou.mybatisplus.generator.config.StrategyConfig;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/2/7 17:46
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description mybatis plus自动生成工具
  */
 public class CodeGenerator {

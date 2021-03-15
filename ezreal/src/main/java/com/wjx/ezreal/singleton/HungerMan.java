@@ -1,9 +1,9 @@
 package com.wjx.ezreal.singleton;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/9 23:04
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description 饿汉单例模式
  */
 public class HungerMan {

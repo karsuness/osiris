@@ -1,9 +1,9 @@
 package com.wjx.ezreal.factory.bean;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/11 11:46
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description 三角形-子类
  */
 public class TriangleShape implements Shape {

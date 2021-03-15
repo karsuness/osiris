@@ -1,9 +1,9 @@
 package com.wjx.ezreal.build;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/15 22:59
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description
  */
 public class Main {

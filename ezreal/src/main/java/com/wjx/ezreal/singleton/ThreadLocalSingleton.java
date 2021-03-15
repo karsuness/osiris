@@ -1,9 +1,9 @@
 package com.wjx.ezreal.singleton;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/10 19:55
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description ThreadLocal实现单例
  */
 public class ThreadLocalSingleton {

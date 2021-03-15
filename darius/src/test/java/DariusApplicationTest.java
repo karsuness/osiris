@@ -5,9 +5,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/2/7 16:27
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description
  */
 @RunWith(SpringRunner.class)

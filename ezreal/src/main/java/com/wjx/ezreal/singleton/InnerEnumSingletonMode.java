@@ -1,9 +1,9 @@
 package com.wjx.ezreal.singleton;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/10 16:15
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description 枚举实现单例模式
  */
 public class InnerEnumSingletonMode {

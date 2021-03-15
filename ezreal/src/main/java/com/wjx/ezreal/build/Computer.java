@@ -5,9 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/15 21:30
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description 构造者产品
  */
 @Data

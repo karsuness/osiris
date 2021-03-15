@@ -1,9 +1,9 @@
 package com.wjx.ezreal.singleton;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/9 23:23
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description 双重锁检查
  */
 public class DCLMode {

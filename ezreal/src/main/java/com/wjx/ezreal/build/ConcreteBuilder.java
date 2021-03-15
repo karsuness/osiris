@@ -1,9 +1,9 @@
 package com.wjx.ezreal.build;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/15 21:56
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description 实际构造者
  */
 public class ConcreteBuilder implements Builder {

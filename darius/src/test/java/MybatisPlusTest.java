@@ -7,9 +7,9 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/2/7 16:05
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description 测试类
  */
 public class MybatisPlusTest extends DariusApplicationTest {

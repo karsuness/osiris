@@ -8,9 +8,9 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/1/26 11:30
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description 虎鲸返回分页详情
  */
 @Data

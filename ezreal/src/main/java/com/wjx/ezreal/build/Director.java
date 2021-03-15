@@ -1,9 +1,9 @@
 package com.wjx.ezreal.build;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/15 22:00
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description builder模式中的指挥者
  */
 public class Director {

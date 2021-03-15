@@ -1,9 +1,9 @@
 package com.wjx.ezreal.factory.abstracts;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/11 20:15
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description
  */
 public class AndroidFactory implements SystemFactory {

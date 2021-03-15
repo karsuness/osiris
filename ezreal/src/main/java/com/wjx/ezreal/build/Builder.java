@@ -1,9 +1,9 @@
 package com.wjx.ezreal.build;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/15 21:34
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description 构造者
  */
 public interface Builder {

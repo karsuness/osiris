@@ -4,9 +4,9 @@ import java.util.Objects;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/10 20:16
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description 利用CAS来实现线程安全
  */
 public class CASSingleton {

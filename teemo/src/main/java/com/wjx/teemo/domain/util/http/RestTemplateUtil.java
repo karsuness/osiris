@@ -10,9 +10,9 @@ import org.springframework.web.client.RestTemplate;
 import java.util.Objects;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/2/18 11:04
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description resttemplate 封装工具类
  */
 @Slf4j

@@ -1,9 +1,9 @@
 package com.wjx.ezreal.factory.bean;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/11 11:45
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description 正方形-子类
  */
 public class RectShape implements Shape {

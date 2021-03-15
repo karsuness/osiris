@@ -5,9 +5,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/2/7 15:29
- * @mail liusha@wacai.com
+ * @mail wjxScott@icloud.com
  * @description 启动类
  */
 @SpringBootApplication
