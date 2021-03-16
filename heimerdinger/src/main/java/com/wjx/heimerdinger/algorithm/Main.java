@@ -1,8 +1,8 @@
 package com.wjx.heimerdinger.algorithm;
 
-import com.wjx.osiris.azir.algorithm.sort.*;
-import com.wjx.osiris.cassiopera.algorithm.search.InsertionSearch;
-import com.wjx.osiris.cassiopera.algorithm.sort.QuickSort;
+
+import com.wjx.heimerdinger.algorithm.search.InsertionSearch;
+import com.wjx.heimerdinger.algorithm.sort.QuickSort;
 
 import java.util.Arrays;
 import java.util.Random;

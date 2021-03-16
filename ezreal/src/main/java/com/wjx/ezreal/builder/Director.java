@@ -1,4 +1,4 @@
-package com.wjx.ezreal.build;
+package com.wjx.ezreal.builder;
 
 /**
  * @author wangjinxin
