@@ -1,0 +1,85 @@
+buildscript {
+    ext {
+        springBootVersion = '2.4.3'
+    }
+
+    repositories {
+        mavenLocal()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+group 'com.wjx.zed'
+version '1.0.0'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+idea {
+    module {
+        downloadSources = true
+        downloadJavadoc = true
+    }
+}
+
+//指定java版本
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+//指定编码格式
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+repositories {
+    mavenLocal()
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    mavenCentral()
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.boot:spring-boot-dependencies:${springBootVersion}"
+    }
+}
+
+dependencies {
+    compile group: 'mysql', name: 'mysql-connector-java'
+    compile group: 'org.projectlombok', name: 'lombok'
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.75'
+    compile group: 'org.apache.commons', name: 'commons-lang3'
+    compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
+    compile group: 'ch.qos.logback', name: 'logback-classic'
+    compile group: 'org.springframework', name: 'spring-core'
+    compile group: 'org.springframework', name: 'spring-aspects'
+    compile group: 'org.springframework', name: 'spring-aop'
+    compile group: 'org.springframework', name: 'spring-beans'
+    compile group: 'org.springframework', name: 'spring-context'
+    compile group: 'org.springframework', name: 'spring-webmvc'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.15'
+    compile group: 'cn.hutool', name: 'hutool-all', version: '5.6.0'
+    compile group: 'com.jcraft', name: 'jsch', version: '0.1.55'
+    compile group: 'javax.servlet', name: 'javax.servlet-api'
+}
+
+jar {
+    manifest.attributes provider: 'gradle'
+}
+
+task 'create-dirs' {
+    doLast {
+        sourceSets*.java.srcDirs*.each {
+            it.mkdirs()
+        }
+        sourceSets*.resources.srcDirs*.each {
+            it.mkdirs()
+        }
+    }
+}
