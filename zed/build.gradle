@@ -5,7 +5,10 @@ buildscript {
 
     repositories {
         mavenLocal()
-        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+            allowInsecureProtocol = true
+        }
         mavenCentral()
     }
     dependencies {
@@ -13,14 +16,17 @@ buildscript {
     }
 }
 
-group 'com.wjx.zed'
+plugins {
+    id 'java'
+    id 'idea'
+    id 'maven-publish'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group 'com.wjx.osiris'
 version '1.0.0'
 
-apply plugin: 'java'
-apply plugin: 'idea'
-apply plugin: 'maven'
-apply plugin: 'org.springframework.boot'
-apply plugin: 'io.spring.dependency-management'
 
 idea {
     module {
@@ -38,9 +44,18 @@ tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
 }
 
+javadoc {
+    options.addStringOption('Xdoclint:none', '-quiet')
+    options.addStringOption('encoding', 'UTF-8')
+    options.encoding = 'UTF-8'
+}
+
 repositories {
     mavenLocal()
-    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        allowInsecureProtocol = true
+    }
     mavenCentral()
 }
 
@@ -51,26 +66,37 @@ dependencyManagement {
 }
 
 dependencies {
-    compile group: 'mysql', name: 'mysql-connector-java'
-    compile group: 'org.projectlombok', name: 'lombok'
-    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.75'
-    compile group: 'org.apache.commons', name: 'commons-lang3'
-    compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
-    compile group: 'ch.qos.logback', name: 'logback-classic'
-    compile group: 'org.springframework', name: 'spring-core'
-    compile group: 'org.springframework', name: 'spring-aspects'
-    compile group: 'org.springframework', name: 'spring-aop'
-    compile group: 'org.springframework', name: 'spring-beans'
-    compile group: 'org.springframework', name: 'spring-context'
-    compile group: 'org.springframework', name: 'spring-webmvc'
-    compile group: 'commons-codec', name: 'commons-codec', version: '1.15'
-    compile group: 'cn.hutool', name: 'hutool-all', version: '5.6.0'
-    compile group: 'com.jcraft', name: 'jsch', version: '0.1.55'
-    compile group: 'javax.servlet', name: 'javax.servlet-api'
+    implementation group: 'mysql', name: 'mysql-connector-java'
+    compileOnly group: 'org.projectlombok', name: 'lombok'
+    annotationProcessor group: 'org.projectlombok', name: 'lombok'
+    implementation group: 'com.alibaba', name: 'fastjson', version: '1.2.75'
+    implementation group: 'org.apache.commons', name: 'commons-lang3'
+    implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
+    implementation group: 'ch.qos.logback', name: 'logback-classic'
+    implementation group: 'org.springframework', name: 'spring-core'
+    implementation group: 'org.springframework', name: 'spring-aspects'
+    implementation group: 'org.springframework', name: 'spring-aop'
+    implementation group: 'org.springframework', name: 'spring-beans'
+    implementation group: 'org.springframework', name: 'spring-context'
+    implementation group: 'org.springframework', name: 'spring-webmvc'
+    implementation group: 'commons-codec', name: 'commons-codec', version: '1.15'
+    implementation group: 'cn.hutool', name: 'hutool-all', version: '5.6.0'
+    implementation group: 'com.jcraft', name: 'jsch', version: '0.1.55'
+    implementation group: 'javax.servlet', name: 'javax.servlet-api'
 }
 
-jar {
-    manifest.attributes provider: 'gradle'
+java {
+    withSourcesJar()
+    withJavadocJar()
+}
+
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+        }
+    }
 }
 
 task 'create-dirs' {

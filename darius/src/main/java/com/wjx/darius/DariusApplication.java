@@ -1,7 +1,7 @@
 package com.wjx.darius;
 
+import com.wjx.osiris.zed.domain.result.Result;
 import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
@@ -14,6 +14,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan("com.wjx.darius.mapper")
 public class DariusApplication {
     public static void main(String[] args) {
-        SpringApplication.run(DariusApplication.class, args);
+//        SpringApplication.run(DariusApplication.class, args);
+        Result result = Result.success();
+        System.out.println(result);
     }
 }
