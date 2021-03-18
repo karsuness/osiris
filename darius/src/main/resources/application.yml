@@ -1,9 +1,0 @@
-spring:
-  application:
-    name: darius
-
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://wangjinxin.cn:3306/darius?characterEncoding=utf-8&serverTimezone=GMT%2B8
-    username: root
-    password: wjx1415926

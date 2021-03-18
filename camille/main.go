@@ -1,8 +1,6 @@
 package main
 
 import (
-	"Galio/_goroutine"
-	"Galio/fun"
 	"fmt"
 )
 
@@ -40,9 +38,6 @@ func main1() {
 	//for{
 	//
 	//}
-
-	_goroutine.Fun4()
-
 }
 
 func fibonacci(ch chan<- int, quit <-chan bool) {
@@ -80,5 +75,4 @@ func main2() {
 }
 
 func main() {
-	fun.Fun()
 }
