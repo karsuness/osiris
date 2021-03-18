@@ -55,6 +55,7 @@ dependencyManagement {
 }
 
 dependencies {
+    implementation group: 'com.wjx', name: 'qilin', version: '1.0.0'
     implementation group: 'com.wjx.osiris', name: 'zed', version: '1.0.0'
     implementation group: 'com.baomidou', name: 'mybatis-plus-boot-starter', version: '3.4.2'
     implementation group: 'com.baomidou', name: 'mybatis-plus-generator', version: '3.4.1'
@@ -62,6 +63,8 @@ dependencies {
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-test'
     implementation group: 'mysql', name: 'mysql-connector-java'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.18'
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.18'
 }
 
 jar {

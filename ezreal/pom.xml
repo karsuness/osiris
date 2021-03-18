@@ -14,9 +14,21 @@
     </properties>
 
     <dependencies>
+        <!--        <dependency>-->
+        <!--            <groupId>com.wjx.teemo</groupId>-->
+        <!--            <artifactId>teemo</artifactId>-->
+        <!--            <version>1.0.0</version>-->
+        <!--        </dependency>-->
+
         <dependency>
-            <groupId>com.wjx.teemo</groupId>
-            <artifactId>teemo</artifactId>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.18</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.wjx</groupId>
+            <artifactId>qilin</artifactId>
             <version>1.0.0</version>
         </dependency>
 

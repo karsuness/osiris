@@ -1,6 +1,6 @@
 package com.wjx.darius;
 
-import com.wjx.osiris.zed.domain.result.Result;
+import com.wjx.qilin.result.Result;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

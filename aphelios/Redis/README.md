@@ -1,3 +1,0 @@
-#Redis
-
-本项目代码主要是测试springdata中的redistemplate没有直接测试jedis，RedisTest中主要是基本的redis5中类型的操作，utils中封装了RedisHelper，这个类可以处理项目中遇到的redis操作

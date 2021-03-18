@@ -44,10 +44,8 @@ tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
 }
 
-javadoc {
-    options.addStringOption('Xdoclint:none', '-quiet')
-    options.addStringOption('encoding', 'UTF-8')
-    options.encoding = 'UTF-8'
+tasks.withType(Javadoc) {
+    options.encoding = "UTF-8"
 }
 
 repositories {
