@@ -1,6 +1,8 @@
 buildscript {
     ext {
-        springBootVersion = '2.4.3'
+        springBootVersion = '2.3.2.RELEASE'
+        springCloudVersion = 'Hoxton.SR8'
+        springCloudAlibabaVersion = '2.2.5.RELEASE'
     }
 
     repositories {
@@ -60,34 +62,19 @@ repositories {
 dependencyManagement {
     imports {
         mavenBom "org.springframework.boot:spring-boot-dependencies:${springBootVersion}"
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+        mavenBom "com.alibaba.cloud:spring-cloud-alibaba-dependencies:${springCloudAlibabaVersion}"
     }
 }
 
 dependencies {
-    implementation group: 'mysql', name: 'mysql-connector-java'
-    compileOnly group: 'org.projectlombok', name: 'lombok'
-    annotationProcessor group: 'org.projectlombok', name: 'lombok'
-    implementation group: 'com.alibaba', name: 'fastjson', version: '1.2.75'
-    implementation group: 'org.apache.commons', name: 'commons-lang3'
-    implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
-    implementation group: 'ch.qos.logback', name: 'logback-classic'
-    implementation group: 'org.springframework', name: 'spring-core'
-    implementation group: 'org.springframework', name: 'spring-aspects'
-    implementation group: 'org.springframework', name: 'spring-aop'
-    implementation group: 'org.springframework', name: 'spring-beans'
-    implementation group: 'org.springframework', name: 'spring-context'
-    implementation group: 'org.springframework', name: 'spring-webmvc'
-    implementation group: 'commons-codec', name: 'commons-codec', version: '1.15'
-    implementation group: 'cn.hutool', name: 'hutool-all', version: '5.6.0'
-    implementation group: 'com.jcraft', name: 'jsch', version: '0.1.55'
-    implementation group: 'javax.servlet', name: 'javax.servlet-api'
+    implementation group: 'com.wjx', name: 'qilin', version: '1.0.0'
 }
 
 java {
     withSourcesJar()
     withJavadocJar()
 }
-
 
 publishing {
     publications {

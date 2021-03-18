@@ -2,4 +2,4 @@
 
 &emsp;&emsp;zed：劫
 
-- 各模块依赖的基础模块
+- SpringBootAdmin 监控中心
