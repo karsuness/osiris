@@ -69,6 +69,13 @@ dependencyManagement {
 
 dependencies {
     implementation group: 'com.wjx', name: 'qilin', version: '1.0.0'
+    implementation group: 'org.springframework.boot',name: 'spring-boot-starter-web'
+    implementation group: 'org.springframework.boot',name: 'spring-boot-starter-actuator'
+    implementation group: 'org.springframework.boot',name: 'spring-boot-starter-mail'
+    implementation group: 'de.codecentric', name: 'spring-boot-admin-starter-server', version: '2.3.1'
+    implementation group: 'de.codecentric',name: 'spring-boot-admin-server-ui',version: '2.3.1'
+    implementation group: 'org.jolokia',name: 'jolokia-core'
+    implementation group: 'com.alibaba.cloud',name: 'spring-cloud-starter-alibaba-nacos-discovery'
 }
 
 java {

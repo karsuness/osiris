@@ -2,8 +2,8 @@
 <configuration scan="true">
     <!-- 获取本机Ip -->
     <springProperty name="LOG_HOME" scope="context" source="logging.path"
-                    defaultValue="/Users/wangjinxin/Documents/logs/osiris/ryze"/>
-    <springProperty name="APP_NAME" scope="context" source="spring.application.name" defaultValue="ryze"/>
+                    defaultValue="/Users/wangjinxin/Documents/logs/osiris/zed"/>
+    <springProperty name="APP_NAME" scope="context" source="spring.application.name" defaultValue="zed"/>
 
     <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
