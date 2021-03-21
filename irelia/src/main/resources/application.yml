@@ -1,10 +1,19 @@
+server:
+  port: 9010
+
 spring:
   application:
-    name: zed
+    name: irelia
   cloud:
     nacos:
       discovery:
         server-addr: ${nacos.address}
+    gateway:
+      discovery:
+        locator:
+          #通过注册中心自动获取
+          enabled: true
+
 
 management:
   endpoints:
@@ -20,6 +29,3 @@ management:
 logging:
   file:
     name: ${logging.path}/${spring.application.name}_info.log
-
-server:
-  port: 9000
