@@ -19,6 +19,7 @@ buildscript {
 plugins {
     id 'java'
     id 'idea'
+    id 'java-library'
     id 'maven-publish'
 }
 
@@ -64,9 +65,8 @@ dependencyManagement {
 }
 
 dependencies {
-    implementation group: 'com.wjx', name: 'qilin', version: '1.0.0'
-    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.18'
-    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.18'
+    api group: 'com.wjx', name: 'qilin', version: '1.0.0'
+    annotationProcessor group: 'org.projectlombok', name: 'lombok'
 }
 
 java {

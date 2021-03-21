@@ -1,2 +1,6 @@
 rootProject.name = 'jhin'
+include 'jhin-web'
+include 'jhin-service'
+include 'jhin-dao'
+include 'jhin-domain'
 
