@@ -4,7 +4,7 @@ spring:
       label: osiris
       server:
         git:
-          uri: https://github.com/wjxScott/config-center.git
+          uri: https://gitee.com/wjxScott/config-center.git
           username: wjxscott@gmail.com
-          password:
+          password: '{cipher}adcbc515dd911cc25a8516b9bfcc6abf48124a98b612bb7a192d2947b589d026'
           search-paths: 'osiris/'
