@@ -8,10 +8,10 @@ spring:
   application:
     name: jhin
 
-#  cloud:
-#    nacos:
-#      discovery:
-#        server-addr: ${nacos_address}
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacos.address}
 
 server:
   port: 9011
