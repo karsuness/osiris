@@ -1,5 +1,5 @@
-# irelia
+# yorick
 
-&emsp;&emsp;irelia 艾瑞莉娅
+&emsp;&emsp;yorick 约里克
 
-- gateway 网关
+- 配置中心

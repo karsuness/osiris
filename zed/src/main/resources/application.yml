@@ -6,6 +6,23 @@ spring:
       discovery:
         server-addr: ${nacos.address}
 
+  spring:
+    mail:
+      host: smtp.163.com #邮箱服务
+      username: wjxScott@163.com #邮箱地址
+      password: PDIVXWEXEPZWGXDR #邮箱授权码或密码
+      properties:
+        mail.debug: false
+        mail.smtp.auth: true
+        mail.smtp.starttls.enable: true
+        mail.smtp.ssl.enable: true
+      boot:
+        admin:
+          notify:
+            mail:
+              to: wjxScott@163.com
+              from: wjxScott@163.com
+
 management:
   endpoints:
     web:

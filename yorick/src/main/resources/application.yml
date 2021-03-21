@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      label: osiris
+      server:
+        git:
+          uri: https://github.com/wjxScott/config-center.git
+          username: wjxscott@gmail.com
+          password: WJXvwxyz342529
+          search-paths: 'osiris/'
