@@ -1,6 +1,6 @@
 package com.wjx.osiris.braum.algorithm.sort;
 
-import com.wjx.osiris.teemo.domain.enumeration.OrderEnum;
+import com.wjx.qilin.enumeration.OrderEnum;
 
 import java.util.Objects;
 

@@ -1,8 +1,9 @@
 package com.wjx.osiris.braum.algorithm;
 
 
-import com.wjx.heimerdinger.algorithm.search.InsertionSearch;
-import com.wjx.heimerdinger.algorithm.sort.QuickSort;
+
+import com.wjx.osiris.braum.algorithm.search.InsertionSearch;
+import com.wjx.osiris.braum.algorithm.sort.QuickSort;
 
 import java.util.Arrays;
 import java.util.Random;
