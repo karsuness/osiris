@@ -1,9 +1,9 @@
 package com.wjx.osiris.braum.leetcode.leetcode027;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/28 22:05
- * @mail liusha@wacai.com
+ * @mail wjxScott@iCloud.com
  * @description
  */
 public class Solution {
