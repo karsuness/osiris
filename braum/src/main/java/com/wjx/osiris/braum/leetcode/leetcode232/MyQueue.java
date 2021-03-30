@@ -3,9 +3,9 @@ package com.wjx.osiris.braum.leetcode.leetcode232;
 import java.util.Stack;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/3/30 23:13
- * @mail liusha@wacai.com
+ * @mail wjxScott@iCloud.com
  * @description
  */
 public class MyQueue {
