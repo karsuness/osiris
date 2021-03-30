@@ -25,6 +25,10 @@ public class UserInfoController {
     @Autowired
     private UserInfoService userInfoService;
 
+    /**
+     * 获取列表
+     * @return
+     */
     @GetMapping("/list")
     public Result listUserInfo() {
         return Result.success(userInfoService.listUserInfo());

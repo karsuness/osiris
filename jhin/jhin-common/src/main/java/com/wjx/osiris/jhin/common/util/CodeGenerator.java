@@ -1,4 +1,4 @@
-package com.wjx.osiris.jhin.domain.util;
+package com.wjx.osiris.jhin.common.util;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.generator.AutoGenerator;

@@ -1,9 +1,5 @@
 dependencies {
-    api group: 'com.wjx', name: 'qilin', version: '1.0.0'
-    api group: 'com.baomidou', name: 'mybatis-plus-boot-starter', version: '3.4.2'
-    api group: 'com.baomidou', name: 'mybatis-plus-generator', version: '3.4.1'
-    api group: 'org.apache.velocity', name: 'velocity-engine-core', version: '2.3'
-    annotationProcessor group: 'org.projectlombok', name: 'lombok'
+    api project(':jhin-common')
 }
 
 task 'create-dirs' {
