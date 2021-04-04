@@ -1,4 +1,4 @@
-package com.wjx.osiris.braum.algorithm.sort;
+package com.wjx.osiris.braum.base.sort;
 
 import com.wjx.qilin.enumeration.OrderEnum;
 

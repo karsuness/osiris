@@ -1,9 +1,8 @@
-package com.wjx.osiris.braum.algorithm;
+package com.wjx.osiris.braum.base;
 
 
-
-import com.wjx.osiris.braum.algorithm.search.InsertionSearch;
-import com.wjx.osiris.braum.algorithm.sort.QuickSort;
+import com.wjx.osiris.braum.base.search.InsertionSearch;
+import com.wjx.osiris.braum.base.sort.QuickSort;
 
 import java.util.Arrays;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package com.wjx.osiris.braum.algorithm.search;
+package com.wjx.osiris.braum.base.search;
 
 /**
  * @author wangjinxin
