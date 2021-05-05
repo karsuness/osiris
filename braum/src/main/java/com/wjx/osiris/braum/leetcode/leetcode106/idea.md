@@ -1,13 +1,4 @@
-package com.wjx.osiris.braum.leetcode.leetcode106;
-
-import com.wjx.osiris.braum.leetcode.TreeNode;
-
-/**
- * @author wangjinxin
- * @date 2021/5/5 18:41
- * @mail wjxScott@iCloud.com
- * @description
- */
+```java
 public class Solution {
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         TreeNode root = build(inorder, 0, inorder.length - 1, postorder, 0, postorder.length - 1);
@@ -34,3 +25,6 @@ public class Solution {
         return root;
     }
 }
+```
+
+本题中要知道后序遍历的最后一个元素就是树的根节点，然后根据这个节点在中序遍历中找到左右子树的元素然后进行递归来构建树
