@@ -1,9 +1,9 @@
 package com.wjx.osiris.braum.leetcode;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/5/5 14:32
- * @mail liusha@wacai.com
+ * @mail wjxScott@iCloud.com
  * @description
  */
 public class Node {

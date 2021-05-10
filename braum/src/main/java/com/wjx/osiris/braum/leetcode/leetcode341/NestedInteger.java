@@ -3,9 +3,9 @@ package com.wjx.osiris.braum.leetcode.leetcode341;
 import java.util.List;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/5/9 15:20
- * @mail liusha@wacai.com
+ * @mail wjxScott@iCloud.com
  * @description
  */
 public interface NestedInteger {

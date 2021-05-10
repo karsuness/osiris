@@ -1,9 +1,9 @@
 package com.wjx.osiris.braum.leetcode;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/5/5 13:45
- * @mail liusha@wacai.com
+ * @mail wjxScott@iCloud.com
  * @description
  */
 public class TreeNode {

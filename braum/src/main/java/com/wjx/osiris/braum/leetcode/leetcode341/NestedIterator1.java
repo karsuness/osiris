@@ -5,9 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/5/9 15:19
- * @mail liusha@wacai.com
+ * @mail wjxScott@iCloud.com
  * @description
  */
 public class NestedIterator1 implements Iterator<Integer> {

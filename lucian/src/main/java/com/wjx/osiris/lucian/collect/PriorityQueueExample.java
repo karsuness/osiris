@@ -1,13 +1,12 @@
 package com.wjx.osiris.lucian.collect;
 
 import java.util.Comparator;
-import java.util.Iterator;
 import java.util.PriorityQueue;
 
 /**
- * @author liusha
+ * @author wangjinxin
  * @date 2021/4/2 17:27
- * @mail liusha@wacai.com
+ * @mail wjxScott@iCloud.com
  * @description
  */
 public class PriorityQueueExample {
