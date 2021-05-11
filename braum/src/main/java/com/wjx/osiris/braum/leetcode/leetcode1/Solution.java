@@ -1,6 +1,7 @@
 package com.wjx.osiris.braum.leetcode.leetcode1;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author wangjinxin
@@ -10,20 +11,14 @@ import java.util.HashMap;
  */
 public class Solution {
     public int[] twoSum(int[] nums, int target) {
-        HashMap<Integer, Integer> map = new HashMap<>(nums.length);
+        Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
+            int value = target - nums[i];
+            if (map.containsKey(value)) {
+                return new int[]{map.get(value), i};
+            }
             map.put(nums[i], i);
         }
-
-        int[] result = new int[2];
-        for (int i = 0; i < nums.length; i++) {
-            int arg1 = target - nums[i];
-            if (map.get(arg1) != null && map.get(arg1) != i) {
-                result[0] = i;
-                result[1] = map.get(arg1);
-                break;
-            }
-        }
-        return result;
+        return new int[2];
     }
 }
