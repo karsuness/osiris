@@ -18,7 +18,7 @@ public class Solution {
 
         ListNode startNode = null;
 
-        if (index != 1) {
+        if (left != 1) {
             while (index != left - 1) {
                 head = head.next;
                 index++;
