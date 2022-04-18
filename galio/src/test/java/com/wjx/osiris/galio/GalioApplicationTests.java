@@ -7,16 +7,16 @@ import com.wjx.osiris.galio.entity.User;
 import com.wjx.osiris.galio.mapper.UserMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Slf4j
 @SpringBootTest
 class GalioApplicationTests {
 
-    @Autowired
+    @Resource
     private UserMapper userMapper;
 
     @Test
