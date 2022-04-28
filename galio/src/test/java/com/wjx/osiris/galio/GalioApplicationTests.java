@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.wjx.osiris.galio.entity.User;
+import com.wjx.osiris.galio.entity.UserActiveRecord;
 import com.wjx.osiris.galio.mapper.UserMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -50,6 +51,41 @@ class GalioApplicationTests {
         System.out.println(userIPage);
 
 
+    }
+
+    @Test
+    public void testModelSelect() {
+        UserActiveRecord selectUserActiveRecord = UserActiveRecord.builder().build();
+
+        UserActiveRecord userActiveRecord = selectUserActiveRecord.selectById(1L);
+
+        System.out.println(userActiveRecord);
+    }
+
+    @Test
+    public void testModelSave() {
+        UserActiveRecord selectUserActiveRecord = UserActiveRecord
+                .builder()
+                .userName("test")
+//                .password("123")
+                .name("name")
+                .age(11)
+                .address("china")
+                .email("xxxx@gmail.com")
+                .build();
+
+        selectUserActiveRecord.insert();
+    }
+
+    @Test
+    public void testUpdateAllTable() {
+//        userMapper.delete(Wrappers.<User>lambdaQuery().ge(User::getId,1L));
+
+        User userActiveRecord = User.builder()
+                .age(22)
+                .build();
+
+        userMapper.update(userActiveRecord, null);
     }
 
 }
