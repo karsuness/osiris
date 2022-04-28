@@ -2,9 +2,11 @@ package com.wjx.osiris.galio;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.wjx.osiris.galio.entity.User;
 import com.wjx.osiris.galio.entity.UserActiveRecord;
+import com.wjx.osiris.galio.enums.SexEnum;
 import com.wjx.osiris.galio.mapper.UserMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -29,6 +31,7 @@ class GalioApplicationTests {
                 .name("jlz")
                 .email("123@qq.com")
                 .address("china")
+                .sex(SexEnum.WOMAN)
                 .build();
 
         userMapper.insert(user);
@@ -44,7 +47,7 @@ class GalioApplicationTests {
         Page<User> page = new Page<>(1, 1);
 
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("name", "jl");
+        queryWrapper.eq("name", "jlz");
 
         IPage<User> userIPage = userMapper.selectPage(page, queryWrapper);
 
@@ -79,13 +82,13 @@ class GalioApplicationTests {
 
     @Test
     public void testUpdateAllTable() {
-//        userMapper.delete(Wrappers.<User>lambdaQuery().ge(User::getId,1L));
+        userMapper.delete(Wrappers.<User>lambdaQuery().eq(User::getId, 9L));
 
-        User userActiveRecord = User.builder()
-                .age(22)
-                .build();
-
-        userMapper.update(userActiveRecord, null);
+//        User userActiveRecord = User.builder()
+//                .age(22)
+//                .build();
+//
+//        userMapper.update(userActiveRecord, null);
     }
 
 }

@@ -1,9 +1,7 @@
 package com.wjx.osiris.galio.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
+import com.wjx.osiris.galio.enums.SexEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -42,4 +40,13 @@ public class User {
 
     @TableField(exist = false)//数据表中不存在
     private String address;
+
+    @TableField("sex")
+    private SexEnum sex;
+
+    /**
+     * 逻辑删除 0 未删除 1删除
+     */
+    @TableLogic
+    private Integer deleted;
 }
