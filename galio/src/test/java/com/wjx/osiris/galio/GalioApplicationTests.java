@@ -25,12 +25,6 @@ class GalioApplicationTests {
     @Test
     void contextLoads() {
         User user = User.builder()
-                .age(31)
-                .userName("jlz")
-                .password("888888")
-                .name("jlz")
-                .email("123@qq.com")
-                .address("china")
                 .sex(SexEnum.WOMAN)
                 .build();
 
@@ -47,7 +41,7 @@ class GalioApplicationTests {
         Page<User> page = new Page<>(1, 1);
 
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("name", "jlz");
+        queryWrapper.eq("user_name", "null");
 
         IPage<User> userIPage = userMapper.selectPage(page, queryWrapper);
 
