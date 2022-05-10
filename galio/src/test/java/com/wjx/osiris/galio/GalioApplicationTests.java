@@ -40,8 +40,11 @@ class GalioApplicationTests {
     public void testPage() {
         Page<User> page = new Page<>(1, 1);
 
+        String userName = null;
+
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("user_name", "null");
+
+        queryWrapper.like("user_name", userName);
 
         IPage<User> userIPage = userMapper.selectPage(page, queryWrapper);
 

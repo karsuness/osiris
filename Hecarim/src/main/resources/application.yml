@@ -1,25 +1,5 @@
 spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/osiris?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&useSSL=false
-    username: root
-    password: 123456
-    type: com.alibaba.druid.pool.DruidDataSource
-
-mybatis-plus:
-  #???????
-  type-aliases-package: com.wjx.osiris.hecarim.domain
-  type-enums-package: com.wjx.osiris.hecarim.enums
-
-  configuration:
-    #????????mybatis??false  mybatis-plus??true?
-    map-underscore-to-camel-case: true
-    #??????
-    cache-enabled: false
-
-  global-config:
-    db-config:
-      #??id??
-      id-type: auto
-      logic-delete-value: 1
-      logic-not-delete-value: 0
+  profiles:
+    active: devx
+    group:
+      "devx": test,dev,pro
