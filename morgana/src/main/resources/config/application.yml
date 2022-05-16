@@ -19,24 +19,3 @@ mybatis-plus:
       id-type: auto
       logic-delete-value: 1
       logic-not-delete-value: 0
-
-#应用环境
-
----
-
-#设置环境
-server:
-  port: 8081
-
----
-spring:
-  profiles:
-    test
-server:
-  port: 8082
-
----
-server:
-  port: 8083
-spring:
-  profiles: pro

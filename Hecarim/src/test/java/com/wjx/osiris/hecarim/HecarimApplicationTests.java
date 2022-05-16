@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.time.LocalDateTime;
+
 @SpringBootTest
 @Slf4j
 class HecarimApplicationTests {
@@ -22,4 +24,9 @@ class HecarimApplicationTests {
         log.info("user is {}", user);
     }
 
+    @Test
+    public void test() {
+        int i = LocalDateTime.now().compareTo(LocalDateTime.now().minusDays(5));
+        System.out.println(i);
+    }
 }

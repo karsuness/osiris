@@ -50,7 +50,6 @@ public class MybatisPlusConfig {
     public PerformanceInterceptor performanceInterceptor() {
         PerformanceInterceptor performanceInterceptor = new PerformanceInterceptor();
         //设置最大执行毫秒
-        performanceInterceptor.setMaxTime(100);
         performanceInterceptor.setFormat(true);
         return performanceInterceptor;
     }
