@@ -67,6 +67,7 @@ dependencyManagement {
 dependencies {
     api group: 'com.wjx', name: 'qilin', version: '1.0.0'
     annotationProcessor group: 'org.projectlombok', name: 'lombok'
+    implementation group: 'cglib', name: 'cglib', version: '3.3.0'
 }
 
 java {
