@@ -11,6 +11,7 @@
 
 <button id="btnGet">GET</button>
 <button id="btnPost">POST</button>
+<button id="btnJsonp">JSONP</button>
 
 <script>
     $(function () {
@@ -31,6 +32,17 @@
                 type: 'POST',
                 url: 'http://127.0.0.1:8888/api/post',
                 data: {name: 'liusha', wife: 'baiwei'},
+                success: function (response) {
+                    console.log(response)
+                }
+            })
+        })
+
+        $('#btnJsonp').on('click', function () {
+            $.ajax({
+                type: 'GET',
+                url: 'http://127.0.0.1:8888/api/jsonp',
+                dataType: 'jsonp',
                 success: function (response) {
                     console.log(response)
                 }
