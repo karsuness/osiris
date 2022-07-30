@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跨域实例页面</title>
+</head>
+
+<script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
+
+<body>
+
+<button id="btnGet">GET</button>
+<button id="btnPost">POST</button>
+
+<script>
+    $(function () {
+        //测试get
+        $('#btnGet').on('click', function () {
+            $.ajax({
+                type: 'GET',
+                url: 'http://127.0.0.1:8888/api/get',
+                data: {name: 'liusha', wife: 'baiwei'},
+                success: function (response) {
+                    console.log(response)
+                }
+            })
+        })
+
+        $('#btnPost').on('click', function () {
+            $.ajax({
+                type: 'POST',
+                url: 'http://127.0.0.1:8888/api/post',
+                data: {name: 'liusha', wife: 'baiwei'},
+                success: function (response) {
+                    console.log(response)
+                }
+            })
+        })
+    })
+
+</script>
+</body>
+</html>
