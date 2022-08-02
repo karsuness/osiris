@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue基础</title>
+</head>
+<body>
+<!--2.声明一个被vue控制的dom区域-->
+<div id="app">
+
+    <!--username的值渲染到p标签中-->
+    <p v-text="username"></p>
+    <p v-text="gender">性别</p>
+    <p>wife:{{wife}}</p>
+
+    <p>---------------</p>
+
+
+    <p v-html="desc"></p>
+
+</div>
+
+
+<!--1.引入vue-->
+<script src="./lib/vue-2.6.12.js"></script>
+
+<script>
+    <!--创建实例对象-->
+    const vm = new Vue({
+        //指定当前vue控制的区域
+        el: '#app',
+        //指定model数据源
+        data: {
+            username: 'liusha',
+            gender: 'man',
+            wife: 'baiwei',
+            desc: '<i style="color:red">hahaha<i>'
+        }
+    })
+
+</script>
+
+</body>
+</html>
