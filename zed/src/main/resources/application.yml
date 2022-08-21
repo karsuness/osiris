@@ -4,12 +4,13 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: ${nacos.address}
+#        server-addr: ${nacos.address}
+        server-addr: http://10.219.192.88:8848/
 
   mail:
     host: smtp.163.com #邮箱服务
     username: wjxScott@163.com #邮箱地址
-    password: PDIVXWEXEPZWGXDR #邮箱授权码或密码
+    password: ZEXUGMMTAORYRJNZ #邮箱授权码或密码
     properties:
       mail.debug: false
       mail.smtp.auth: true
