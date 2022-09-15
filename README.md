@@ -11,8 +11,6 @@
 - darius：德莱厄斯 - Python代码
 - ezreal：伊泽瑞尔 - 前端代码
 - irelia：艾瑞莉娅 - gateway网关
-- jhin：烬 - 微服务
-- kingred：千珏 - 微服务
 - lucian：卢锡安 - Java代码
 - yorick：约里克-配置中心
 - zed：劫-监控中心
